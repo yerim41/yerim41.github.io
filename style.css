@@ -1,3 +1,26 @@
 h1 {
     text-align: center;
+    margin-top: 230px;
+    font-size: 10px;
+}
+
+h1 span:tnh-chlid(2) {
+    color: #4285f4;
+}
+h1 span:tnh-chlid(2) {
+    color: #4285f4;
+}
+h1 span:tnh-chlid(2) {
+    color: #4285f4;
+}
+h1 span:tnh-chlid(2) {
+    color: #4285f4;
+}
+h1 span:tnh-chlid(2) {
+    color: #4285f4;
+}
+
+.search-bar {
+    width: 500px;
+
 }
