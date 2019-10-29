@@ -1,0 +1,66 @@
+body {
+/*    background: #1e1e1e;*/
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+body, th, td, input, select, textarea, button {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'NotoSans Light','Malgun Gothic','¸¼Àº °íµñ','Apple SD Gothic Neo','µ¸¿ò',dotum, sans-serif;
+    color: #666;
+}
+
+.wrap_head {
+    max-width: 1160px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrap_head .tit_service {
+    display: block;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 20px;
+    background: url(http://t1.kakaocdn.net/kakaocorp/pw/logo_kakao.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+#kakaoGnb {
+    display: inline-block;
+    height: 60px;
+    vertical-align: top;
+}
+
+#kakaoGnb .list_gnb {
+    float: left;
+    height: 60px;
+    margin-left: 5px;
+}
+
+#kakaoGnb .list_gnb > li {
+    float: left;
+    height: 61px;
+}
+
+dl, ul, ol, menu, li {
+    list-style: none;
+}
+
+.list_lang {
+    float: right;
+    margin-top: 17px;
+}
+
+.info_svc {
+    float: left;
+    position: relative;
+    clear: both;
+}
+
+.copyright {
+    color:#1e1e1e; 
+    padding-top: 2px; 
+    font-size:12px;
+}
