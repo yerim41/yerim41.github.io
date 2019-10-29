@@ -1,5 +1,5 @@
 body {
-/*    background: #1e1e1e;*/
+ /*   background: #1e1e1e;*/
     word-wrap: break-word;
     word-break: keep-all;
 }
@@ -7,8 +7,12 @@ body {
 body, th, td, input, select, textarea, button {
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'NotoSans Light','Malgun Gothic','¸¼Àº °íµñ','Apple SD Gothic Neo','µ¸¿ò',dotum, sans-serif;
+    font-family: 'NotoSans Light','Malgun Gothic','ë§‘ì€ ê³ ë”•','Apple SD Gothic Neo','ë‹ì›€',dotum, sans-serif;
     color: #666;
+}
+
+.tit_logo {
+    float: left;
 }
 
 .wrap_head {
@@ -44,6 +48,22 @@ body, th, td, input, select, textarea, button {
     height: 61px;
 }
 
+#kakaoGnb .list_gnb > li .link_gnb {
+    display: block;
+    padding: 0 14px 0 13px;
+    position: relative;
+    color: #1e1e1e;
+    font-size: 16px;
+    height: 60px;
+    line-height: 58px;
+    font-family: 'NotoSans Regular','Malgun Gothic','ë§‘ì€ ê³ ë”•','Apple SD Gothic Neo','ë‹ì›€',dotum, sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
 dl, ul, ol, menu, li {
     list-style: none;
 }
@@ -51,11 +71,20 @@ dl, ul, ol, menu, li {
 .list_lang {
     float: right;
     margin-top: 17px;
+    clear: both;
 }
 
 .info_svc {
     float: left;
     position: relative;
+}
+
+.info_svc .dlnk_info {
+    margin-right: 8px;
+}
+
+.info_copyright {
+    float: left;
     clear: both;
 }
 
@@ -63,4 +92,29 @@ dl, ul, ol, menu, li {
     color:#1e1e1e; 
     padding-top: 2px; 
     font-size:12px;
+}
+
+
+
+#kakaoGnb .list_gnb > li .link_talent {
+    padding-right: 32px;
+}
+
+.ico_corp {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    background: url(http://t1.kakaocdn.net/kakaocorp/pw/ico_corp_181031.png) no-repeat;
+    text-indent: -9999px;
+    vertical-align: top;
+}
+
+.ico_arr {
+    position: absolute;
+    top: 23px;
+    right: 13px;
+    width: 14px;
+    height: 14px;
+    background-position: -155px 0;
 }
