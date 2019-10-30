@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>카카오 소개페이지</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
 
@@ -52,15 +52,21 @@
             </div>
         </header>
         <div id="main" style="min-height: 602px; max-height: 3000spx;">
+            <div class="black_arrow_box black_arrow_box_prev">
+            <span id="prev_button" class="prev_button arrowButton">이전</span>
+        </div>
+            <div class="black_arrow_box black_arrow_box_next">
+            <span id="next_button" class="next_button arrowButton">다음</span>
+        </div>
             <ul class="wrap_slide">
-                <li class="auto_tab">
+                <li class="auto_tab tab_slide">
                     <div class="thumb_slide">
                         <div class="inner_slide tab1" style="height: 842px;">
                             <p class="desc_g"> 카카오는 새로운 연결을 통해 <br> 더 편리하고 즐거운 세상을 꿈꿉니다. </p>
                         </div>
                     </div>
                 </li>
-                <li class="auto_tab2">
+                <li class="auto_tab2 tab_slide">
                     <div class="thumb_slide">
                         <div class="inner_slide tab2 white_bg" style="height: 842px;">
                             <p class="desc_g"> 카카오로 연결된 수많은 파트너들과, <br> 그들과 함께 더 나은 세상을 만들어나가고자 하는 <br> 카카오의 진심을 전합니다.
@@ -68,7 +74,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="auto_tab3">
+                <li class="auto_tab3 tab_slide">
                     <div class="thumb_slide">
                         <div class="inner_slide tab3 white_bg" style="height: 842px;">
                             <p class="desc_g"> 끊임없이 이동하는 우리의 삶 속 카카오는 어떤 모습일까요? <br> 이동에 대한 카카오의 모든 이야기들을 담았습니다. </p>
@@ -138,10 +144,17 @@
         </div>
     </footer>
     </div>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('.auto_tab').slick();
+            $('.wrap_slide').slick({
+                fade: true,
+                autoplay: true,
+                speed: 300,
+                prevArrow: $('#prev_button'), 
+                nextArrow: $('#next_button')
+            });
         });
     </script>
 

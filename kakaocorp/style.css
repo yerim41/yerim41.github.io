@@ -62,10 +62,6 @@ dl, ul, ol, menu, li {
     list-style: none;
 }
 
-.box_gnb {
-}
-
-
 .kakao_type .wrap_head {
     max-width: 1760px;
     padding: 0 80px;
@@ -100,6 +96,10 @@ dl, ul, ol, menu, li {
 }
 
 
+.wrap_slide {
+}
+
+
 .wrap_slide .inner_slide {
     max-width: 1760px;
     height: 100%;
@@ -131,6 +131,8 @@ dl, ul, ol, menu, li {
     color: #1e1e1e;
 }
 
+
+
 .info_svc {
     float: left;
     position: relative;
@@ -146,6 +148,44 @@ dl, ul, ol, menu, li {
 }
 #main .thumb_slide .tab3 {
     background-image: url(https://t1.kakaocdn.net/kakaocorp/operating/co/main-banner/3189.png);
+}
+
+.black_arrow_box {
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    z-index: 30;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.arrowButton {
+    display: inline-block;
+    background: url(http://t1.kakaocdn.net/kakaocorp/pw/ico_corp_181031.png) no-repeat;
+    text-indent: -9999px;
+}
+
+.black_arrow_box_prev {
+    left: 0;
+}
+
+.black_arrow_box_next {
+    right: 0;
+}
+
+.prev_button {
+    width: 28px;
+    height: 19px;
+    margin: 11px 0px 10px 12px;
+    background-position: -155px -158px;
+}
+
+.next_button {
+    width: 28px;
+    height: 19px;
+    margin: 11px 12px 10px 0px;
+    background-position: -192px -158px;
 }
 
 .footer_infomation {
