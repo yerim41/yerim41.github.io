@@ -11,7 +11,7 @@ a {
 }
 
 body {
- /*   background: #1e1e1e;*/
+/*    background: #1e1e1e;*/
     word-wrap: break-word;
     word-break: keep-all;
 }
@@ -56,22 +56,6 @@ body, th, td, input, select, textarea, button {
     float: left;
     height: 61px;
     padding-right: 16px;
-}
-
-#kakaoGnb .list_gnb > li .link_gnb {
-    display: block;
-    padding: 0 14px 0 13px;
-    position: relative;
-    color: #1e1e1e;
-    font-size: 16px;
-    height: 60px;
-    line-height: 58px;
-    font-family: 'NotoSans Regular','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
 }
 
 dl, ul, ol, menu, li {
@@ -131,7 +115,6 @@ dl, ul, ol, menu, li {
     font-size: 14px;
 
     margin-top: 17px;
-    clear: both;
 }
 
 .lang_selected {
@@ -143,6 +126,10 @@ dl, ul, ol, menu, li {
     position: relative;
     margin-right: 16px;
     font-size: 12px;
+}
+
+#main .thumb_slide {
+    background-image: url(https://t1.kakaocdn.net/kakaocorp/admin/main-banner/1652);
 }
 
 .footer_infomation {
@@ -159,7 +146,8 @@ dl, ul, ol, menu, li {
 
 
 .footer_group {
-    padding-left: 200px;
+    max-width: 1760px;
+    padding: 22px 80px 0;
 }
 
 .copyright_area {
