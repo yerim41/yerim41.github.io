@@ -76,6 +76,7 @@ dl, ul, ol, menu, li {
     height: 60px;
     margin: 0 auto;
     text-align: center;
+    background-color: transparent;
 }
 
 .wrap_head .tit_service {
@@ -106,9 +107,18 @@ dl, ul, ol, menu, li {
     padding: 0 80px;
 }
 
+.inner_slide .desc_g {
+    padding-top: 110px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    line-height: 48px;
+}
 
+.white_bg .desc_g {
+    color: black;
 
-
+}
 
 .list_lang {
     float: right;
@@ -128,8 +138,14 @@ dl, ul, ol, menu, li {
     font-size: 12px;
 }
 
-#main .thumb_slide {
+#main .thumb_slide .tab1 {
     background-image: url(https://t1.kakaocdn.net/kakaocorp/admin/main-banner/1652);
+}
+#main .thumb_slide .tab2 {
+    background-image: url(https://t1.kakaocdn.net/kakaocorp/admin/main-banner/1657);
+}
+#main .thumb_slide .tab3 {
+    background-image: url(https://t1.kakaocdn.net/kakaocorp/operating/co/main-banner/3189.png);
 }
 
 .footer_infomation {

@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>카카오 소개페이지</title>
-    <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 
 <body class="kakao_type">
-    <div id="kakaoWrap"> <!-- 전체 페이지 -->
-        <header id="kakaohead" class="head_type1"> <!-- header -->
+    <div id="kakaoWrap">
+        <!-- 전체 페이지 -->
+        <header id="kakaohead" class="head_type1">
+            <!-- header -->
             <div class="wrap_head">
                 <div class="box_gnb">
                     <h1 class="tit_logo">
@@ -48,74 +51,99 @@
                 </div>
             </div>
         </header>
-        <div id="main" style="min-height: 602px; max-height: 842px;">
-            <div class="thumb_slide">
-                <div class="inner_slide">
-
-                </div>
-            </div>
-
+        <div id="main" style="min-height: 602px; max-height: 3000spx;">
+            <ul class="wrap_slide">
+                <li class="auto_tab">
+                    <div class="thumb_slide">
+                        <div class="inner_slide tab1" style="height: 842px;">
+                            <p class="desc_g"> 카카오는 새로운 연결을 통해 <br> 더 편리하고 즐거운 세상을 꿈꿉니다. </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="auto_tab2">
+                    <div class="thumb_slide">
+                        <div class="inner_slide tab2 white_bg" style="height: 842px;">
+                            <p class="desc_g"> 카카오로 연결된 수많은 파트너들과, <br> 그들과 함께 더 나은 세상을 만들어나가고자 하는 <br> 카카오의 진심을 전합니다.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="auto_tab3">
+                    <div class="thumb_slide">
+                        <div class="inner_slide tab3 white_bg" style="height: 842px;">
+                            <p class="desc_g"> 끊임없이 이동하는 우리의 삶 속 카카오는 어떤 모습일까요? <br> 이동에 대한 카카오의 모든 이야기들을 담았습니다. </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div id="information">
-            <div id="textarea">
-
-            </div>
-            <div id="photo_textarea">
-
-            </div>
-        </div>
-        <footer id="">
-            <div class="footer_group">
-                <div class="footer_infomation">
-                    <div class="info_svc">
-                        <a href="" class="dlnk_info">
-                            이용약관
-                        </a>
-                    </div>
-                    <div class="info_svc">
-                            <a href="" class="dlnk_info">
-                            위치기반서비스이용약관
-                        </a>
-                    </div>
-                    <div class="info_svc">
-                            <a href="" class="dlnk_info">
-                            개인정보처리방침
-                        </a>
-                    </div>
-                    <div class="info_svc">
-                            <a href="" class="dlnk_info">
-                            운영정책
-                        </a>
-                    </div>
-                    <div class="info_svc">
-                            <a href="" class="dlnk_info">
-                            청소년보호정책
-                        </a>
-                    </div>
-                    <div class="info_svc">
-                            <a href="" class="dlnk_info">
-                            권리침해신고안내
-                        </a>
-                    </div>
-                    <div class="info_svc">
-                            <a href="" class="dlnk_info">
-                            공지사항
-                        </a>
-                    </div>
-                    <div class="info_svc">
-                            <a href="" class="dlnk_info">
-                            사이버윤리실
-                        </a>
-                    </div>
-                </div>
-                <div class="copyright_area">
-                    <small class="copyright">
-                        Copyright © Kakao Corp. All rights reserved.
-                    </small>
-                </div>
-            </div>
-        </footer>
     </div>
+    <div id="information">
+        <div id="textarea">
+
+        </div>
+        <div id="photo_textarea">
+
+        </div>
+    </div>
+    <footer id="">
+        <div class="footer_group">
+            <div class="footer_infomation">
+                <div class="info_svc">
+                    <a href="" class="dlnk_info">
+                        이용약관
+                    </a>
+                </div>
+                <div class="info_svc">
+                    <a href="" class="dlnk_info">
+                        위치기반서비스이용약관
+                    </a>
+                </div>
+                <div class="info_svc">
+                    <a href="" class="dlnk_info">
+                        개인정보처리방침
+                    </a>
+                </div>
+                <div class="info_svc">
+                    <a href="" class="dlnk_info">
+                        운영정책
+                    </a>
+                </div>
+                <div class="info_svc">
+                    <a href="" class="dlnk_info">
+                        청소년보호정책
+                    </a>
+                </div>
+                <div class="info_svc">
+                    <a href="" class="dlnk_info">
+                        권리침해신고안내
+                    </a>
+                </div>
+                <div class="info_svc">
+                    <a href="" class="dlnk_info">
+                        공지사항
+                    </a>
+                </div>
+                <div class="info_svc">
+                    <a href="" class="dlnk_info">
+                        사이버윤리실
+                    </a>
+                </div>
+            </div>
+            <div class="copyright_area">
+                <small class="copyright">
+                    Copyright © Kakao Corp. All rights reserved.
+                </small>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.auto_tab').slick();
+        });
+    </script>
 
 </body>
 
