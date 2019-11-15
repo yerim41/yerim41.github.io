@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="../include/css/style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="main_header">
+            <header class="header">
+                <!--
+                <div class="navigation_logo">로고자리입니다.</div>
+                -->
+                <nav class="navitation_menu">
+                    <ul class="navigation">
+                        <li class="menu">
+                            <a href="#">
+                                <span class="menu_txt">Skills</span>
+                            </a>
+                        </li>
+                        <li class="menu">
+                            <a href="#">
+                                <span class="menu_txt">Project</span>
+                            </a>
+                        </li>
+                        <li class="menu">
+                            <a href="#">
+                                <span class="menu_txt">About Me</span>
+                            </a>
+                        </li>
+                        <li class="menu">
+                            <a href="#">
+                                <span class="menu_txt">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="main_bgarea">
+            <img src="https://t1.kakaocdn.net/kakaocorp/operating/co/main-banner/3189.png" />
+        </div>
+        <div class="main_contents">
+            <div class="skill_area content_area">
+                <h2 class="title">Skills</h2>
+            </div>
+            <div class="portfolio_area content_area">
+                <h2 class="title">Project</h2>
+                <div class="portfolio_contents">
+                    <a href="#">
+                        <div class="portfolio_img">
+                            <img src="../image/sg_kcrbds_main_full.jpg" />
+                        </div>
+                        <div class="portfolio_title">
+                            <strong>교차로 약 50개사 부동산 웹사이트</strong>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio_contents">
+                    <a href="#">
+                        <div class="portfolio_img">
+                            <img src="../image/m_sg_kcrbds_main.jpg" />
+                        </div>
+                        <div class="portfolio_title">
+                            <strong>교차로 약 50개사 부동산 모바일 사이트</strong>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio_contents">
+                    <a href="#">
+                        <div class="portfolio_img">
+                            <img src="../image/sg_kcrbds_main.png" />
+                        </div>
+                        <div class="portfolio_title">
+                            <strong>교차로 약 50개사 부동산 사이트</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="about_area content_area">
+                <h2 class="title">About Me</h2>
+                <ul>
+                    <li>
+                        <p><span class="about_date">2008. 02</span>포항장성고등학교 졸업</p>
+                    </li>
+                    <li>
+                        <p><span class="about_date">2008. 03</span>동의대학교 입학</p>
+                    </li>
+                    <li>
+                        <p><span class="about_date">2012. 02</span>동의대학교 컴퓨터소프트웨어공학과 학사 취득</p>
+                    </li>
+                    <li>
+                        <p><span class="about_date">2012. 02</span>동의대학교 정보통신공학과 복수학위 취득</p>
+                    </li>
+                    <li>
+                        <p><span class="about_date">2013. 03 ~ 2019. 11</span>(주)인터넷교차로 재직</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts_area content_area">
+                <h2 class="title">Contacts</h2>
+                <div class="social_list">
+                    <div class="social_unit">
+                        <span class="social_title">Phone</span>
+                        <span class="social_txt txt">010-4003-9946</span>
+                    </div>
+                    <div class="social_unit">
+                        <span class="social_title">E-mail</span>
+                        <span class="social_txt txt">yerim8941@naver.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer class="footer_infomation">
+            <div class="copyright">
+                <small>Copyright 2019 Yerim. All rights reserved. </small>
+            </div>
+            <div class="contacts">
+
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() >= 100) {
+                    $('.navitation_menu').css('background-color', 'white');
+                    $('.navitation_menu').css('border-bottom', '1px solid #e5e5e5');
+                } else {
+                    $('.navitation_menu').css('background-color', '');
+                    $('.navitation_menu').css('border-bottom', '');
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

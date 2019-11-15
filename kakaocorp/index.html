@@ -41,7 +41,7 @@
                                     <a href="" class="link_gnb">고객지원</a>
                                 </li>
                                 <li>
-                                    <a href="" class="link_gnb">인재영입</a>
+                                    <a href="" class="link_gnb">인재영입 <span class="link_talent"></span></a>
                                 </li>
                             </ul>
                         </nav>
@@ -94,7 +94,9 @@
                             <p><strong>PRESS RELEASE</strong></p>
                         </div>
                         <div class="contents_title">
-                            <p>카카오싱크, 출시 반 년 만에 비즈니스 파트너 돕는 톡 비즈 솔루션으로 자리잡아</p>
+                            <a href="">
+                                <span>카카오싱크, 출시 반 년 만에 비즈니스 파트너 돕는 톡 비즈 솔루션으로 자리잡아</span>
+                            </a>
                         </div>
                         <div class="summary">
                             <p>- 제조, 유통, 이커머스 등 약 170여 곳, 최근 온라인 쇼핑몰 ‘G마켓’ 신규 도입
@@ -162,47 +164,47 @@
         <div class="footer_group">
             <div class="footer_infomation">
                 <div class="info_svc">
-                    <a href="" class="dlnk_info">
+                    <a href="#none" class="dlnk_info">
                         이용약관
                         <span class="ico_corp ico_arr"></span>
                     </a>
                 </div>
                 <div class="info_svc">
-                    <a href="" class="dlnk_info">
+                    <a href="#none" class="dlnk_info">
                         위치기반서비스이용약관
                         <span class="ico_corp ico_arr"></span>
                     </a>
                 </div>
                 <div class="info_svc">
-                    <a href="" class="dlnk_info">
-                        개인정보처리방침
+                    <a href="#none" class="dlnk_info">
+                        <strong style="color:black;">개인정보처리방침</strong>
                         <span class="ico_corp ico_arr"></span>
                     </a>
                 </div>
                 <div class="info_svc">
-                    <a href="" class="dlnk_info">
+                    <a href="http://www.kakao.com/policy/oppolicy?lang=ko" class="dlnk_info">
                         운영정책
                     </a>
                 </div>
                 <div class="info_svc">
-                    <a href="" class="dlnk_info">
+                    <a href="#none" class="dlnk_info">
                         청소년보호정책
                         <span class="ico_corp ico_arr"></span>
                     </a>
                 </div>
                 <div class="info_svc">
-                    <a href="" class="dlnk_info">
+                    <a href="http://www.kakao.com/policy/right?lang=ko" class="dlnk_info">
                         권리침해신고안내
                     </a>
                 </div>
                 <div class="info_svc">
-                    <a href="" class="dlnk_info">
+                    <a href="#none" class="dlnk_info">
                         공지사항
                         <span class="ico_corp ico_arr"></span>
                     </a>
                 </div>
                 <div class="info_svc">
-                    <a href="" class="dlnk_info">
+                    <a href="https://www.kakaocorp.com/policy/cyberEthics/info" class="dlnk_info">
                         사이버윤리실
                     </a>
                 </div>
@@ -222,14 +224,15 @@
         $(document).ready(function () {
             $(window).on("scroll", function() {
                 if ($(window).scrollTop() >= 100) {
-                    $("#kakaoHead").addClass("whiteBg");
+                    $("#kakaoHead").addClass("scrollWithWhiteBg");
                     if ($("#kakaoHead").hasClass('head_type2')) {
                         $("#kakaoHead").removeClass('head_type2');
                         $("#kakaoHead").addClass("head_type1");
                     }
                 } else {
-                    $("#kakaoHead").removeClass("whiteBg");
-                    if ($("#kakaoHead").hasClass('head_type2')) {
+                    $("#kakaoHead").removeClass("scrollWithWhiteBg");
+                    if ($('.slick-current').hasClass('block_bg') && $("#kakaoHead").hasClass('head_type1')) { // 검정배경이면서 검정글씨class(head_type1)이면 검정class를 지워라
+                        $("#kakaoHead").removeClass('head_type1');
                         $("#kakaoHead").addClass("head_type2");
                     }
                 }
@@ -243,30 +246,30 @@
             });
 
             if ($('.slick-current').hasClass('block_bg')) {
-                $('#kakaoHead').removeClass('head_type1');
-                $('#kakaoHead').addClass('head_type2');
-            }
-            else {
+                if ($(window).scrollTop() >= 100) {
+                    $("#kakaoHead").addClass("scrollWithWhiteBg");
+                } else {
+                    if ($("#kakaoHead").hasClass("scrollWithWhiteBg")) {
+                        $("#kakaoHead").removeClass("scrollWithWhiteBg");
+                    }
+                    $('#kakaoHead').removeClass('head_type1');
+                    $('#kakaoHead').addClass('head_type2');
+                }
+            } else {
                 $('#kakaoHead').removeClass('head_type2');
                 $('#kakaoHead').addClass('head_type1');
             }
 
             $('.wrap_slide').on('afterChange', function (event, slick, currentSlide, nextSlide) {
                 if ($('.slick-current').hasClass('block_bg')) {
-                    $('#kakaoHead').removeClass('head_type1');
-                    $('#kakaoHead').addClass('head_type2');
-                }
-                else {
+                    if ($(window).scrollTop() < 100) {
+                        $('#kakaoHead').removeClass('head_type1');
+                        $('#kakaoHead').addClass('head_type2');    
+                    }
+                } else {
                     $('#kakaoHead').removeClass('head_type2');
                     $('#kakaoHead').addClass('head_type1');
                 }
-            });
-
-            $('.dlnk_info').on('mouseover', function() {
-                $(this).addClass('footer_mouseover');
-            });
-            $('.dlnk_info').on('mouseout', function() {
-                $(this).removeClass('footer_mouseover');
             });
         });
     </script>

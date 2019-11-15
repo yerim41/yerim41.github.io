@@ -1,0 +1,52 @@
+body, html {
+    width: 1240px;
+    margin: 0px auto;
+}
+
+li, a {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+.logo_text {
+    font-size: 12px;
+}
+
+.logo_text_bold {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main_background {
+    width: 100%;
+    background: url("http://t1.kakaocdn.net/jewika/images/2019-04-09/039ba52410a4409c9da21070f141a507.png") no-repeat;
+    min-height: 940px;
+    text-indent: -9999px;
+}
+
+.header {
+    padding: 20px 0;
+    width: 100%;
+    height: 60px;
+}
+
+.logo_jeju_with_kakao {
+    float: left;
+    font-size: 18px;
+}
+
+.header_menubar {
+    padding: 0 20px;
+    list-style: none;
+    float: right;
+}
+
+.header_menu {
+    font-size: 13.5px;
+    display: inline-block;
+    padding: 0 30px;
+
+}

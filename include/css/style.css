@@ -1,0 +1,125 @@
+body, ul, li{
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main_header { 
+    display: block;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 100;
+}
+
+.navitation_menu {
+    width: 100%;
+    text-align: right;
+}
+
+.navigation {
+    padding: 8px 100px;
+    display: inline-block;
+    list-style: none;
+}
+
+.menu {
+    float: left;
+    padding: 10px 50px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.menu_txt:hover {
+    text-decoration: underline;
+}
+
+.main_bgarea {
+    position: relative;
+    width: 100%;
+    height: 842px;
+}
+
+.main_contents {
+    position: relative;
+    max-width: 1800;
+    padding: 50px 200px;
+}
+
+.content_area {
+    padding: 60px 0;
+}
+
+.portfolio_contents {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+}
+
+.portfolio_img {
+    width: 300px;
+    height: 450px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.portfolio_img img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio_img:hover {
+    border: 1px solid gray;
+}
+
+.portfolio_title {
+    text-align: left;
+    padding: 20px 0 0 0 ;
+}
+
+.about_date {
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+.social_title {
+    font-size: 25px;
+}
+
+.social_unit {
+    float: left;
+    padding: 0px 50px 0px 10px;
+}
+
+.social_unit span {
+    display: block;
+}
+
+.social_icon {
+    width: 80px;
+    height: 80px;
+}
+
+.footer {
+    position: absolute;
+    display: block;
+    padding: 30px 100px;
+    width: 100%;
+    border-top: 1px solid #d5d5d5;
+}

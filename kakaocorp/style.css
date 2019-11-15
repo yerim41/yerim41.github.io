@@ -10,6 +10,7 @@ a {
 
 p {
     letter-spacing: -1px;
+    color: #666;
 }
 
 body {
@@ -33,10 +34,19 @@ body, th, td, input, select, textarea, button {
     display: block;
     position: relative;
     height: 60px;
-    padding: 0 14px 0 13px;
+    padding: 0 14px 0 0;
     font-size: 16px;
     line-height: 58px;
     font-family: 'NotoSans Regular','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;
+}
+
+.link_talent {
+    width: 10px;
+    height: 10px;
+    top: 25px;
+    position: absolute;
+    background-position: -280px -30px;
+    background: url(http://t1.kakaocdn.net/kakaocorp/pw/ico_corp_181031.png) no-repeat;
 }
 
 .head_type1 a {
@@ -60,9 +70,10 @@ body, th, td, input, select, textarea, button {
     width: 100%;
 }
 
-.whiteBg {
+.scrollWithWhiteBg {
     background-color: white;
     color: #666;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 #kakaoGnb {
@@ -173,6 +184,7 @@ dl, ul, ol, menu, li {
 
 #main {
     position: relative;
+    overflow: hidden;
 }
 
 .black_arrow_box {
@@ -228,7 +240,7 @@ dl, ul, ol, menu, li {
 }
 
 .summary {
-    padding: 10px;
+    padding: 10px 0 0 0px;
     font-size: 13px;
 }
 
@@ -338,6 +350,15 @@ dl, ul, ol, menu, li {
 .info_svc .dlnk_info {
     letter-spacing: -0.5px;
     color: #aeaeae;
+}
+
+.dlnk_info:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.dlnk_info:hover .ico_arr {
+    background-position: -285px -25px;
 }
 
 .copyright {
